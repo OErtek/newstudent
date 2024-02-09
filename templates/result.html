@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}
+Transaction Result
+{% endblock %}
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .result-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    strong {
+        color: #007bff;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+</style>
+
+<div class="result-container">
+    <strong>Result of the database transaction:</strong>
+    <p>{{ msg }}</p>
+</div>
+{% endblock %}
